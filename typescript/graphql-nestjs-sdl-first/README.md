@@ -6,6 +6,22 @@ This example shows how to implement an **GraphQL server (SDL-first) with TypeScr
 
 ### 1. Download example & install dependencies
 
+Download this example:
+
+```
+curl https://codeload.github.com/prisma/prisma-examples/tar.gz/latest | tar -xz --strip=2 prisma-examples-latest/typescript/graphql-nestjs-sdl-first
+```
+
+Install npm dependencies:
+```
+cd graphql-nestjs-sdl-first
+npm install
+```
+
+Note that this also generates Prisma Client JS into `node_modules/@prisma/client` via a `postinstall` hook of the `@prisma/client` package from your `package.json`.
+
+<Details><Summary><strong>Alternative:</strong> Clone the entire repo</Summary>
+
 Clone this repository:
 
 ```
@@ -19,7 +35,7 @@ cd prisma-examples/typescript/graphql-nestjs-sdl-first
 npm install
 ```
 
-Note that this also generates Prisma Client JS into `node_modules/@prisma/client` via a `postinstall` hook of the `@prisma/client` package from your `package.json`.
+</Details>
 
 ### 2. Start the GraphQL server
 
